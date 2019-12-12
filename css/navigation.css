@@ -2,17 +2,12 @@
   display: none;
 }
 
+div.page-header {
+  padding-top: 64px !important;
+}
+
 @media (min-width: 992px) {
   .top-navigation {
-    background: rgba(01, 34, 61, 0.6);
-    height: 80px;
-  }
-
-  .top-navigation .site-logo {
-    display: none;
-  }
-
-  .top-navigation .navbar-dropdown {
     display: none;
   }
 
@@ -72,5 +67,31 @@
 
   .top-nav-search-btn {
     color: var(--light-grey);
+  }
+
+  .nav-search-wrap {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 32px 0;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .site-logo {
+    position: relative;
+  }
+
+  .nav-search-wrap #search_input {
+    background: white;
+    color: #111;
+  }
+
+  .nav-search-wrap .top-nav-search-btn {
+    top: 0 !important;
+    right: 0 !important;
   }
 }
